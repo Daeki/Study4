@@ -51,7 +51,7 @@ public class ClassStudy_2 {
 		
 		//
 		
-		
+		//dfsdfsd
 		//모든 학생의 정보 출력
 		System.out.println("Study2 Finish");
 	}
