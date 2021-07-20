@@ -15,6 +15,7 @@ public class StudentMenu {
 	public void start() {
 		Scanner sc = new Scanner(System.in);
 		StudentView sv = new StudentView();
+		StudentInput si = new StudentInput();
 		
 		System.out.println("학생 수를 입력하세요");//2
 		int count = sc.nextInt();
@@ -24,20 +25,9 @@ public class StudentMenu {
 		
 		
 		for(int i=0;i<students.length;i++) {
-			Student student = new Student();
-			System.out.println("이름을 입력하세요");
-			student.name = sc.next();
-			System.out.println("번호 입력");
-			student.num = sc.nextInt();
-			System.out.println("국어 입력");
-			student.kor = sc.nextInt();
-			System.out.println("영어 입력");
-			student.eng = sc.nextInt();
-			System.out.println("수학 입력");
-			student.math = sc.nextInt();
-			student.total = student.kor + student.eng + student.math;
-			student.avg = student.total / 3.0;
-			students[i]=student;
+			//Student student = si.makeStudent();
+			//students[i]=student;
+			students[i]=si.makeStudent();
 		}
 		
 		
