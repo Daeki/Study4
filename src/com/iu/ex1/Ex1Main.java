@@ -32,6 +32,8 @@ public class Ex1Main {
 		ch.weapon.name = "지팡이";
 		System.out.println(ch.weapon.name);
 		
+		//ch.weapon
+		
 		weapon.name = "도끼";
 		System.out.println(ch.weapon.name);
 		
@@ -64,6 +66,8 @@ public class Ex1Main {
 		System.out.println("Gold : "+ch.gold);
 		System.out.println("Weapon : "+ch.weapon.name);
 		System.out.println("Weapon.damage : "+ch.weapon.damage);
+		
+		
 		
 		//
 		monster = new Monster();
