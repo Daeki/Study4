@@ -14,6 +14,32 @@ public class StudentMenu {
 	
 	public void start() {
 		Scanner sc = new Scanner(System.in);
+		StudentView sv = new StudentView();
+		
+		System.out.println("학생 수를 입력하세요");//2
+		int count = sc.nextInt();
+		
+		//학생을 모을 배열 선언
+		Student [] students = new Student[count];
+		
+		
+		for(int i=0;i<students.length;i++) {
+			Student student = new Student();
+			System.out.println("이름을 입력하세요");
+			student.name = sc.next();
+			System.out.println("번호 입력");
+			student.num = sc.nextInt();
+			System.out.println("국어 입력");
+			student.kor = sc.nextInt();
+			System.out.println("영어 입력");
+			student.eng = sc.nextInt();
+			System.out.println("수학 입력");
+			student.math = sc.nextInt();
+			student.total = student.kor + student.eng + student.math;
+			student.avg = student.total / 3.0;
+			students[i]=student;
+		}
+		
 		
 		boolean flag = true;
 		
@@ -27,11 +53,24 @@ public class StudentMenu {
 			
 			switch(select) {
 			case 1:
-				System.out.println("정보 출력");
+				sv.viewAll(students);
 				break;
 			
 			case 2:
-				System.out.println("번호 검색");
+				System.out.println("학생 번호 입력");
+				int num = sc.nextInt();
+				
+				Student student=null;
+				for(int i=0;i<students.length;i++) {
+					if(students[i].num == num) {
+						student = students[i];
+						break;
+					}
+				}
+				
+				if(student != null) {
+					sv.viewOne(student);
+				}
 				break;
 				
 			case 3 : 
