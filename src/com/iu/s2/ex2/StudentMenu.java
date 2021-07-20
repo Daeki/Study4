@@ -64,7 +64,9 @@ public class StudentMenu {
 				break;
 				
 			case 3 : 
-				System.out.println("정보 추가");
+				Student st = si.makeStudent();
+				
+				
 				break;
 			case 4:
 				System.out.println("성적순 출력");

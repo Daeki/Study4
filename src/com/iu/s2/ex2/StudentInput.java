@@ -4,6 +4,19 @@ import java.util.Scanner;
 
 public class StudentInput {
 	
+	
+	
+	//addArray
+	//1. 새로운 배열 생성, 길이는 기존배열보다 1칸 많게
+	//2. 기존 배열의 값을 복사
+	
+	
+	
+	
+	
+	
+	
+	
 	//makeStudent
 	//학생 한명 생성
 	//이름, 번호, 국어, 영어, 수학 입력받고
