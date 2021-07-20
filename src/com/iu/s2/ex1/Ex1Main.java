@@ -23,6 +23,12 @@ public class Ex1Main {
 		
 		phoneView.view(phone);
 		
+		Phone [] phones = new Phone[2];
+		phones[0]=phone;
+		phones[1]=phone2;
+		
+		phoneView.makePrice(phones);
+		
 		System.out.println("Ex2 Finish");
 	}
 
