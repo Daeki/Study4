@@ -32,6 +32,16 @@ public class ClassStudy_2 {
 			students[i]=student;
 		}
 		
+		
+		//1. 전체 정보 출력
+		//2. 학생 번호 검색 
+		//3. 학생 정보 추가 - 학생 한명을 배열에 추가
+		//4. 성적 순서 출력
+		//5. 프로 그램 종료
+		
+		
+		
+		
 		System.out.println("이름\t번호\t국어\t영어\t수학\t총점\t평균");
 		System.out.println("=======================================================");
 		for(int i=0;i<students.length;i++) {
@@ -45,14 +55,7 @@ public class ClassStudy_2 {
 			System.out.println("---------------------------------------------------");
 		}
 		
-		//String name = sc.next();
-		//학생의 수 만큼 정보를 입력- 이름, 번호, 국어, 영어, 수학
-		//총점 평균
-		
-		//
-		
-		//dfsdfsd
-		//모든 학생의 정보 출력
+
 		System.out.println("Study2 Finish");
 	}
 
