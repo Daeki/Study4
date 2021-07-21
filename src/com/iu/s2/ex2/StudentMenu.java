@@ -65,8 +65,9 @@ public class StudentMenu {
 				
 			case 3 : 
 				Student st = si.makeStudent();
-				
-				
+				students = si.addArray(students);
+				students[students.length-1]=st;
+				 
 				break;
 			case 4:
 				System.out.println("성적순 출력");

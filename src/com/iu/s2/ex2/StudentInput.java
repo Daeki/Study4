@@ -10,6 +10,15 @@ public class StudentInput {
 	//1. 새로운 배열 생성, 길이는 기존배열보다 1칸 많게
 	//2. 기존 배열의 값을 복사
 	
+	public Student [] addArray( Student [] old) {
+		Student [] students = new Student[old.length+1];
+		
+		for(int i=0;i<old.length;i++) {
+			students[i] = old[i];
+		}
+		
+		return students;
+	}
 	
 	
 	
