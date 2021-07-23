@@ -12,6 +12,8 @@ public class CarMain {
 		
 		Car car3 = new Car("Pink", 70000000);
 		
+		Car.company="BMW";
+		
 		car.info();
 		car2.info();
 		car3.info();

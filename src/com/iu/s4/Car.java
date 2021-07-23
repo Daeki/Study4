@@ -2,7 +2,7 @@ package com.iu.s4;
 
 public class Car {
 	
-	String company;
+	static String company="Kia";
 	String brand;
 	String color;
 	int price;
@@ -21,7 +21,6 @@ public class Car {
 	}
 	
 	public Car(String color, int price) {
-		this.company="Kia";
 		this.brand="K7";
 		this.color=color;
 		this.price=price;
@@ -34,7 +33,7 @@ public class Car {
 	
 	
 	public void info() {
-		System.out.println("Comapnay : "+this.company);
+		System.out.println("Comapnay : "+Car.company);
 		System.out.println("Brand : "+this.brand);
 		System.out.println("Color : "+this.color);
 		System.out.println("Price : "+this.price);
